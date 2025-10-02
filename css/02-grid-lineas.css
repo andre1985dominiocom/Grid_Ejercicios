@@ -2,12 +2,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    width: var(--width);
-    height: var(--height);
-    padding: 20px;
-    border: 2px solid;
+    grid-template-columns: repeat(4, 100px);
+    
 }
 
 .item {

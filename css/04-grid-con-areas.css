@@ -1,0 +1,49 @@
+@import url(styles.css);
+
+.grid-con-areas {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "header header header header header header header header header header header header"
+                         "header header header header header header header header header header header header"
+                         "formulario formulario formulario formulario . gris . . . . . ."
+                         "formulario formulario formulario formulario . gris . . . . . ."
+                         "formulario formulario formulario formulario . gris fucsia fucsia . . . ."
+                         "formulario formulario formulario formulario . gris fucsia fucsia . . . ."
+                         "azul azul azul azul azul gris fucsia fucsia . . . ."
+                         "azul azul azul azul azul gris fucsia fucsia . . . ."
+                         "azul azul azul azul azul gris . . rojo rojo rojo rojo"
+                         "azul azul azul azul azul gris . . rojo rojo rojo rojo"
+                         "azul azul azul azul azul gris . . rojo rojo rojo rojo"
+                         "azul azul azul azul azul gris . . rojo rojo rojo rojo";
+}
+
+.header {
+    grid-area: header;
+    background-color: green;
+}
+
+.formulario {
+    grid-area: formulario;
+    background-color: blueviolet;
+}
+
+.azul {
+    grid-area: azul;
+    background-color: blue;
+}
+
+.rojo {
+    grid-area: rojo;
+    background-color: brown;
+}
+
+.fucsia {
+    grid-area: fucsia;
+    background-color: fuchsia;
+}
+
+.gris {
+    grid-area: gris;
+    background-color: gray;
+}

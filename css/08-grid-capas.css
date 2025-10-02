@@ -1,0 +1,29 @@
+@import url(styles.css);
+
+.grid-capas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-auto-flow: row dense;
+    grid-auto-flow: column;
+    grid-template-rows: 200px;
+}
+
+.item:nth-child(1) {
+    background-color: blueviolet;
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.item:nth-child(4) {
+    background-color: black;
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.item:nth-child(12) {
+    background-color: brown;
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
