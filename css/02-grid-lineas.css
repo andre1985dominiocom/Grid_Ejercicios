@@ -2,9 +2,20 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-columns: 20% repeat(2, 30%) 20%;
-    grid-template-rows: repeat(5, 100px);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: var(--width);
+    height: var(--height);
+    padding: 20px;
+    border: 2px solid;
+}
 
+.item {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }

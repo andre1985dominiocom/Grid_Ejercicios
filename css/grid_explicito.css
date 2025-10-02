@@ -1,10 +1,21 @@
 @import url(styles.css);
 
-.grid_explicito {
+
+.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(1fr);
-    grid-template-columns: 300px repeat(3 2fr) 200px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-rows: repeat(1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    height: var(--height);
+    width: var(--width);
+}
+
+.item {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
