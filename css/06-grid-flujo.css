@@ -7,6 +7,6 @@
 
     grid-auto-flow: row;
     grid-auto-rows: 100px;
-    grid-auto-flow: column; /* Flujo denso*/
+    grid-auto-flow: dense; /* Flujo denso*/
     grid-auto-columns: 450px;
 }
